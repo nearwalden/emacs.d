@@ -1,0 +1,2 @@
+# don't keep backups in git
+backups/**
