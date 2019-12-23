@@ -6,7 +6,7 @@
     
     ;; gpg tools
     ;; (require 'epa-file)
-    (custom-set-variables '(epg-gpg-program  "/usr/local/bin/gpg"))
+    ;; (custom-set-variables '(epg-gpg-program  "/usr/local/bin/gpg"))
     ;; (epa-file-enable)
 
     ;; go modes
@@ -25,6 +25,7 @@
     (add-to-list 'default-frame-alist '(height . 50))
     (add-to-list 'default-frame-alist '(width . 100))
 
+    (tool-bar-mode -1)
 
     ))
 
@@ -81,8 +82,9 @@
  '(custom-safe-themes
    '("5dc8ea509d300f9b751fce3d94d9885d264c5bda240e90e884d48601955b3f8c" default))
  '(epg-gpg-program "/usr/local/bin/gpg")
- '(inhibit-startup-screen t)
- '(tool-bar-mode nil))
+ )
+ ;; '(inhibit-startup-screen t))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
