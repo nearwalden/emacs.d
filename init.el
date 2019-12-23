@@ -7,7 +7,7 @@
     ;; gpg tools
     ;; (require 'epa-file)
     (custom-set-variables '(epg-gpg-program  "/usr/local/bin/gpg"))
-    (epa-file-enable)
+    ;; (epa-file-enable)
 
     ;; go modes
     ;; (add-to-list 'load-path "~/.emacs.d/vendor/go-mode.el/")
