@@ -498,7 +498,7 @@
 
 (require 'easymenu)
 (require 'outline)
-(eval-when-compile (require 'cl))
+;; (eval-when-compile (require 'cl))
 
 ;;; Constants =================================================================
 
