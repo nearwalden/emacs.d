@@ -5,7 +5,7 @@
   (progn
     
     ;; gpg tools
-    (require 'epa-file)
+    ;; (require 'epa-file)
     (custom-set-variables '(epg-gpg-program  "/usr/local/bin/gpg"))
     (epa-file-enable)
 
@@ -19,8 +19,13 @@
 
     ;; themes
     (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-    (load-theme 'ample t)
+    (load-theme 'seti t)
     ;; (emable-theme 'ample)
+    ;; set window size
+    (add-to-list 'default-frame-alist '(height . 50))
+    (add-to-list 'default-frame-alist '(width . 100))
+
+
     ))
 
 ;; markdown
@@ -63,10 +68,6 @@
 (add-hook 'text-mode-hook
 	  '(lambda() (set-fill-column 80)))
 
-;; set window size
-(add-to-list 'default-frame-alist '(height . 50))
-(add-to-list 'default-frame-alist '(width . 100))
-
 
 
 (custom-set-variables
@@ -76,11 +77,10 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
- '(custom-enabled-themes (quote (ample)))
  '(custom-safe-themes
-   (quote
-    ("5dc8ea509d300f9b751fce3d94d9885d264c5bda240e90e884d48601955b3f8c" default)))
+   '("5dc8ea509d300f9b751fce3d94d9885d264c5bda240e90e884d48601955b3f8c" default))
  '(epg-gpg-program "/usr/local/bin/gpg")
+ '(inhibit-startup-screen t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
