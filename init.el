@@ -26,6 +26,7 @@
     (add-to-list 'default-frame-alist '(width . 100))
 
     (tool-bar-mode -1)
+    (menu-bar-mode -1)
 
     ))
 
