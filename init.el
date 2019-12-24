@@ -59,8 +59,9 @@
       auto-save-default t               ; auto-save every buffer that visits a file
       auto-save-timeout 20              ; number of seconds idle time before auto-save (default: 30)
       auto-save-interval 200            ; number of keystrokes between auto-saves (default: 300)
-      default-directory "~/"
       )
+
+(setq-default default-directory "~/")
 
 ;; Electrify the buffer list:
 (global-set-key "" 'electric-buffer-list)
